@@ -1,0 +1,17 @@
+[features]
+seeds = false
+[programs.localnet]
+locker_manager = "81xYZSmJTvL9nYCxH2btBq1ksdTuop791cDjaecJ5RUn"
+pool_manager = "6DYsJbtQzaW3WKiWE4Ai9oDcnCPyDZHVRArDeAAWYg5d"
+pool_reward_keeper = "DbeXNM8GVHMEeRWePsq4BtsBVtWT3J7aG1SgP4c9zZqJ"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+# cluster = "localnet"
+cluster = "https://api.devnet.solana.com"
+wallet = "/home/home/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
